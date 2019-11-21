@@ -67,7 +67,6 @@ public class ArrClass {
             return array;
         }
 
-
     static void printArr(int[] arr){
         for (int i : arr){
             System.out.println(i);
