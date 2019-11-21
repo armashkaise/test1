@@ -66,47 +66,6 @@ public class ArrClass {
 
             return array;
         }
-      /*       public static void main(String[] args) {
-                int[] x = { 8, 0, 4, 7, 3, 7, 10, 12, -3 };
-                System.out.println("Было");
-                System.out.println(Arrays.toString(x));
-
-                int low = 0;
-                int high = x.length - 1;
-
-                quickSort(x, low, high);
-                System.out.println("Стало");
-                System.out.println(Arrays.toString(x));
-            }
-
-
-       if (start >= end)
-            return;
-        int i = start, j = end;
-        int cur = i - (i - j) / 2;
-        while (i < j) {
-            while (i < cur && (arr[i] <= arr[cur])) {
-                i++;
-            }
-            while (j > cur && (arr[cur] <= arr[j])) {
-                j--;
-            }
-            if (i < j) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-                if (i == cur)
-                    cur = j;
-                else if (j == cur)
-                    cur = i;
-            }
-
-        }
-        quickSort(arr, start, cur);
-        quickSort(arr,cur+1, end);
-
-        //return 0;*/
-
 
 
     static void printArr(int[] arr){
