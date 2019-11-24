@@ -6,6 +6,7 @@ public class BinarySearchClass {
     }
 
     static void binarySearch(){
+        System.out.println("Hallo");
         int[] arr = {1, 2, 4, 7, 8, 13, 18, 21, 25};
         printArrInLine(arr);
         int item = 12;
