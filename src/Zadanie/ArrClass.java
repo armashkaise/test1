@@ -3,13 +3,17 @@ package Zadanie;
 public class ArrClass {
     public static void main(String[] args) {
 
-        int[] arr = {6, 3, 2, 5, 1, 4};
+        int[] arrInt = {6, 3, 2, 5, 1, 4};
 
-        int[] arrBubbleSort = bubbleSort(arr);
-        System.out.println("Bubble sort");
-        printArr(arrBubbleSort);
+        int[] arrBubbleSortInt = bubbleSort(arrInt);
+        System.out.println("Bubble sort - int");
+        printArr(arrBubbleSortInt);
 
-        //int[] arrQuickSort =
+        long[] arrLong = {1L, 13L, 4L, 10L, 6L, 8L };
+        long[] arrBubbleSortLong = bubbleSort(arrLong);
+        System.out.println("Bubble sort - long");
+        printArr(arrBubbleSortLong);
+
         int[] arr1 = {2, 6, 4, 3, 1};
         int[] arrQuickSort = quickSort(arr1, 0, arr1.length - 1);
         System.out.println("Quick sort");
@@ -30,7 +34,19 @@ public class ArrClass {
         return arr;
     }
 
-
+    static long[] bubbleSort(long [] arr){
+        int arrLength = arr.length;
+        for (int i = 0; i < arrLength; i++){
+            for (int j = 0; j < arrLength-i; j++){
+                if (arr[i] > arr[j+i]){
+                    long val = arr[i];
+                    arr[i] = arr[j+i];
+                    arr[j+i] = val;
+                }
+            }
+        }
+        return arr;
+    }
 
 
 
@@ -69,6 +85,12 @@ public class ArrClass {
 
     static void printArr(int[] arr){
         for (int i : arr){
+            System.out.println(i);
+        }
+    }
+
+    static void printArr(long[] arr){
+        for (long i : arr){
             System.out.println(i);
         }
     }
