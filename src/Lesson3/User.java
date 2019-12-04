@@ -1,8 +1,9 @@
 package Lesson3;
 
 public class User {
-    String login;
+    String login = "User1";
     String password;
+
     String role;
 
 }
