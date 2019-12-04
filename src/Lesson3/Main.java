@@ -6,6 +6,5 @@ public class Main {
         Profile profile = new Profile();
         profile.user = user;
         System.out.println(profile.user.login);
-
     }
 }
